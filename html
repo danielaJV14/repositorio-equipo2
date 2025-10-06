@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café del Sol ☕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Café del Sol</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#menu">Menú</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
 
+    <section id="inicio">
+        <h2>Bienvenido</h2>
+        <p>Disfruta del mejor café artesanal en un ambiente tranquilo y moderno.  
+        ¡Tu lugar favorito para relajarte y disfrutar de una buena charla!</p>
+        <button id="btnPromo">Ver Promoción</button>
+    </section>
+
+    <section id="menu">
+        <h2>Menú Destacado</h2>
+        <ul>
+            <li>☕ Cappuccino - $45</li>
+            <li>🍫 Mocha - $50</li>
+            <li>🥐 Croissant de mantequilla - $30</li>
+            <li>🍰 Cheesecake - $55</li>
+        </ul>
+    </section>
+
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <form id="formContacto">
+            <input type="text" id="nombre" placeholder="Tu nombre" required>
+            <input type="email" id="correo" placeholder="Tu correo" required>
+            <textarea id="mensaje" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="respuesta"></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Café del Sol - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
