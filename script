@@ -1,1 +1,17 @@
+// Botón de promoción
+document.getElementById("btnPromo").addEventListener("click", function() {
+    alert("🎉 Promoción del día: Café + Croissant por solo $60 ☕🥐");
+});
+
+// Formulario de contacto
+document.getElementById("formContacto").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const nombre = document.getElementById("nombre").value;
+    const correo = document.getElementById("correo").value;
+
+    document.getElementById("respuesta").textContent =
+        `Gracias ${nombre}, pronto te responderemos a ${correo}.`;
+    
+    this.reset();
+});
 
